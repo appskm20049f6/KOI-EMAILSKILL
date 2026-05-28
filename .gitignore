@@ -1,0 +1,5 @@
+# 本機設定不進版控（保險）
+.claude/
+config.local.json
+__pycache__/
+*.pyc

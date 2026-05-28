@@ -1,0 +1,13 @@
+{
+  "name": "letter-writer-marketplace",
+  "owner": {
+    "name": "appskm20049f6"
+  },
+  "plugins": [
+    {
+      "name": "letter-writer",
+      "source": "./",
+      "description": "依固定模板生成中文新聞稿發送 email，支援第一次設定、每次發稿問答與排程定時產出；也可寫一般商務信件。"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "letter-writer",
+  "description": "依固定模板生成中文新聞稿發送 email（遊戲公司發稿用），支援第一次設定、每次發稿問答、排程定時產出；也可寫一般商務信件。",
+  "version": "1.1.0",
+  "author": {
+    "name": "appskm20049f6"
+  },
+  "keywords": ["press-release", "letter", "email", "media", "business", "chinese", "template", "schedule"]
+}
