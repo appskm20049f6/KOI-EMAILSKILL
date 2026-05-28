@@ -48,6 +48,16 @@ https://drive.google.com/drive/folders/...
 
 兩種檔案內容相同，差別只在 `.plugin` 帶完整外掛清單、`.skill` 只含技能本體。
 
+### C. claude.ai 網頁/App（上傳自訂 Skill）
+
+到 [Releases](https://github.com/appskm20049f6/KOI-EMAILSKILL/releases) 下載 `letter-writer-claudeai.zip`，在 claude.ai 的 **Settings → Capabilities → Skills → Upload skill** 上傳。
+
+注意事項：
+- 上傳自訂 Skill 通常需要 Pro/Team/Max 方案並開啟程式碼執行。
+- claude.ai 無法從 GitHub 網址安裝；分享給別人需各自上傳此 zip（Team 可由管理員統一加入）。
+- claude.ai 對話間不會自動記住設定，建議把固定設定放進 **Project 自訂指令**；且 claude.ai 無法定時自動發信。
+- 此版原始檔在 repo 的 `claudeai-skill/` 資料夾。
+
 ## 使用方式
 
 直接用自然語言說你要發稿，例如：
@@ -74,9 +84,21 @@ letter-writer-plugin/
 │       ├── press-release-template.md  新聞稿模板邏輯與範例
 │       ├── scheduling.md             排程與待發清單
 │       └── templates.md              一般商務信模板
+├── claudeai-skill/                   claude.ai 網頁/App 版（上傳用，無 ~/.claude 與排程依賴）
+│   ├── SKILL.md
+│   ├── scripts/render_press_release.py
+│   └── references/{settings, press-release-template, templates}.md
 ├── README.md
 └── LICENSE
 ```
+
+## 三種版本對照
+
+| 版本 | 適用 | 安裝方式 | 設定保存 | 定時自動發 |
+|------|------|----------|----------|------------|
+| Claude Code plugin | 終端工具 | `/plugin marketplace add` | 本機 `~/.claude` | ✅ 可排程 |
+| Cowork（.plugin/.skill） | Cowork 桌面/網頁 | 拖入檔案 | 工作區 | 視環境 |
+| claude.ai skill（.zip） | claude.ai 網頁/App | 設定上傳 | 建議放 Project 指令 | ❌ 不支援 |
 
 ## 自訂
 
