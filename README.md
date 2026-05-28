@@ -28,6 +28,8 @@ https://drive.google.com/drive/folders/...
 
 ## 安裝
 
+### A. Claude Code（給 repo 網址即可）
+
 在 Claude Code 中執行：
 
 ```
@@ -36,6 +38,15 @@ https://drive.google.com/drive/folders/...
 ```
 
 安裝後重新載入 Claude Code 即可使用。
+
+### B. Cowork（下載單檔安裝）
+
+到本 repo 的 [Releases](https://github.com/appskm20049f6/KOI-EMAILSKILL/releases) 下載：
+
+- `letter-writer.plugin` —— 在 Cowork 對話中拖入此檔，按下安裝按鈕即可
+- `letter-writer.skill` —— 若只需單一 skill，亦可下載此檔匯入
+
+兩種檔案內容相同，差別只在 `.plugin` 帶完整外掛清單、`.skill` 只含技能本體。
 
 ## 使用方式
 
